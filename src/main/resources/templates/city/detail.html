@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>City detail</title>
+</head>
+<body>
+    <h1>City Detail</h1>
+    <h2>CityName: <span th:text="${city.getCityName()}"></span></h2>
+    <h2>Country: <span th:text="${city.getCountry().getName()}"></span></h2>
+    <h2>Area: <span th:text="${city.getArea()}"></span></h2>
+    <h2>Population: <span th:text="${city.getPopulation()}"></span></h2>
+    <h2>GDP: <span th:text="${city.getGdp()}"></span></h2>
+    <h2>Description : <span th:text="${city.getDescription()}"></span></h2>
+    <a th:href="@{/city}">Back to home</a>
+</body>
+</html>
